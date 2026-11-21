@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#101b36" />
-  <meta name="description" content="Register for AIMER Business School's exclusive Mabrook participants webinar: Entrepreneurship as a Career, on 27 November 2026." />
+  <meta name="description" content="Register for AIMER Business School's exclusive webinar for GCC students and parents: Entrepreneurship as a Career, on 27 November 2026." />
   <title>Entrepreneurship as a Career | AIMER Business School</title>
   <style>
     :root {
@@ -128,9 +128,17 @@
     .info-row strong { display: block; color: var(--navy); font-size: .96rem; }
     .info-row small { display: block; color: var(--muted); font-size: .87rem; margin-top: 2px; }
     .speaker {
-      margin-top: 22px; padding: 23px 25px; border-radius: 18px;
-      background: #EAF4F5; border: 1px solid #D4E8EA;
+      margin-top: 26px; padding: 27px; border-radius: 20px;
+      background: linear-gradient(125deg, #EAF8F8 0%, #F7FCFC 58%, #DDF2F3 100%);
+      border: 1px solid #A9D9DE;
+      box-shadow: 0 16px 42px rgba(0,139,165,.13);
+      position: relative; overflow: hidden;
     }
+    .speaker::after { content:""; position:absolute; width:150px; height:150px; border:1px solid rgba(0,139,165,.18); border-radius:50%; right:-55px; top:-65px; box-shadow:0 0 0 18px rgba(0,139,165,.04),0 0 0 38px rgba(0,139,165,.025); pointer-events:none; }
+    .speaker-profile { position:relative; z-index:1; }
+    .speaker-photo { width:166px; height:184px; flex-basis:166px; border:4px solid #fff; box-shadow:0 12px 30px rgba(11,31,42,.2); }
+    .speaker-details h3 { font-size:1.55rem; letter-spacing:-.025em; }
+    .speaker-kicker { display:inline-block; background:var(--teal); color:#fff; border-radius:999px; padding:5px 12px; letter-spacing:.1em; }
 
     .speaker-profile { display:flex; align-items:center; gap:22px; }
     .speaker-photo { width:142px; height:160px; flex:0 0 142px; object-fit:cover; object-position:center 25%; border-radius:16px; border:3px solid #fff; box-shadow:0 8px 24px rgba(11,31,42,.14); }
@@ -155,6 +163,14 @@
     .register-button:hover { background: var(--blue); transform: translateY(-1px); }
     .register-button span { color: #8DE0E6; margin-left: 8px; }
     .form-note { color: var(--muted); font-size: .8rem; margin: 12px 2px 0; }
+    .register-button { background:linear-gradient(110deg,var(--teal),var(--blue)); box-shadow:0 12px 28px rgba(0,139,165,.24); }
+    .register-button:hover { background:linear-gradient(110deg,#00788e,#214968); }
+    .register-secondary { display:flex; align-items:center; justify-content:center; gap:8px; width:100%; margin-top:12px; padding:13px 16px; border:1.5px solid #20A464; border-radius:12px; color:#16834E; background:#F0FBF5; text-decoration:none; font-weight:800; transition:.18s ease; }
+    .register-secondary:hover { background:#E2F7EA; transform:translateY(-1px); }
+    .whatsapp-float { position:fixed; right:22px; bottom:22px; z-index:900; display:flex; align-items:center; gap:10px; padding:13px 18px; border-radius:999px; background:#20B765; color:#fff; text-decoration:none; font-weight:800; box-shadow:0 10px 28px rgba(0,0,0,.22); transition:transform .18s ease,box-shadow .18s ease; }
+    .whatsapp-float:hover { transform:translateY(-3px); box-shadow:0 14px 34px rgba(0,0,0,.27); }
+    .whatsapp-icon { width:25px; height:25px; display:block; flex:0 0 25px; }
+    @media (max-width:520px) { .whatsapp-float { right:14px; bottom:14px; padding:12px 15px; font-size:.88rem; } .speaker-photo { width:112px; height:132px; flex-basis:112px; } .speaker { padding:18px; } .speaker-details h3 { font-size:1.2rem; } }
     .modal-backdrop {
       position: fixed; inset: 0; z-index: 1000; display: none;
       align-items: center; justify-content: center; padding: 18px;
@@ -204,7 +220,7 @@
   <header class="topbar">
     <div class="topbar-inner">
       <img class="brand-logo" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMHEBUTBxEWFRMTFyEXGBYXGBcfIBsaHhcaGx4XGRkgHygsHh4mHhkYITMhJysvLi4uHR8zODMtNyotLisBCgoKDg0OGxAQGzclICYxMDU2NjU1NTI3LzAyLzctNTc3LTY1Ly83NS0rLSs1NTU1LzgwLTUtLzU1Njc1Ly0yL//AABEIAMgAyAMBIgACEQEDEQH/xAAcAAEAAwADAQEAAAAAAAAAAAAABQYHAwQIAQL/xABOEAABAwMBBAYECAkKBQUAAAABAAIDBAUREgYTITEHIkFRgZEUMmFxI0JScoKhscEIFRczVGKistEkNUODkqOz0uHwFiVTk8I0RGNkc//EABoBAQADAQEBAAAAAAAAAAAAAAADBAUCAQb/xAAsEQEAAgIBAwMCBAcAAAAAAAAAAQIDERIEIVEiMUEFEzJhcdEjQlKBofDx/9oADAMBAAIRAxEAPwDcUREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQF8JxzVb2u2pbYAGxN1yuGQ08gPlO8ewe1UkC47WnPWMZ+hGP831qamGbRymdQp5usrS3CscreIaFX7T0lBwqKhmR2N6x8m5UNP0i0zPzLJXfRaPtK6Fv6NgONxnPzYwB+07P2Kcp9hqKH1oi/wCc933ELrWGvmUfLrL+0RVE/lKi/R5P7TVzwdI1O789FK3wafvUJ0iW6ntQhZb4WsLtTnEZzgYAH1/UuS5WCntlrbNUR5ne1uHanDrP48s44D7FLwxTETr3V5zdVW1q8o9MblbaLa6jreDJ2tJ7H5b9Z4KbY8SDLDkHkQsk2f2TN3p3zvlEbWkgZGQQ0dYnuHZ5qJtt0ntjv+WSuHHk3OCO/Qf4LyemrMzFZ9nVfqGSkROWvafH7N0RU3ZDbL8buENe0NlI6rm8n45jHYf9VclVvSaTqWjizUy15VERFylEREBERAREQEREBERAREQEREGT7auabr/KvUBj1Z+TgZ8OavDNr6Fgw2oaAOQDX8vJUbbWEVF1LHnAeY2k9wIAyp78n9L+kv8AOP8Agrt4pNK8p+GPitmjLk+3ET3+U7/xjQ/pLfJ/8F37Xd4bqHG3yB4bwOAeGeXMKqN6PqZ3BtRIT72fwU/s3s6ywB4pnudvCCdWOwdmB7VBeMUR6Zna5iv1M29cRr8lO6V2nfQk8t2795SXSCN5b4HR+rqYfAxnH+/aubpOt5qKdksfHcu4/NdgZ8w361xbNvbtLbHU0x+EjGjPdjjG76gPAqas+itvEqt6TObJj/qjs+WZhrLG5lJxeGSNwO/WTj34woXo/vdPaTL+MDoc/Ba/BPAA5bwGRx4ri2Zvb9lJ3w3Jp0F2HtHNrvlt7xjzGFY6jZu334mWhmDS7id25uM+1pHVPkuraruLe099o8fK/C2PXKsamJVOKrZVXVklA3Sx1Q0tGMcNQBOOzPE+K2JY96Ey3XWOKjcXMZNGASQc8Wk8R7VsKj6nXp14WPp2/Xv32IiKq0hERAREQEREBERAREQEREBERBkm3MJqLm5jCAX7toz3loC7f5OKj/qw/t/5V1Nug43N3o+dfwenHPVpGMeK5N1eP/s/2h/FaMTbhXUxHZ8/Ncc5b8qzPefZKWPYSe3VMUsskRbG7UQNWe3lw9q0NRuzwlFLF+Mc73QNernn2qRJxzVLJe1p7tjp8NMdPRGt93FUQNqWOZOAWuGCD2g9iymupZ9iasPpjlh9Vx5Pb2sf7f8AQru3faVzbnmCpd6O2RmdLjpwNOvh2jOVoc9PFdItMwbJG8Z7wR3g/eFLG8Wt94lWvx6rfCdWrPaf9+FY3lDtswb06JwOWQHj2Dse3/fBQ9R0bSg/yadhHe5rgfqyua79Hbmkus8gxz0Scx7nj7/NRwtl3oxpjM+B8mUEeHWUtZ1+C/8AaVbJWZn+Ni3PmPlHUtudablFDK4OLJo8lvLiWn71s6xeiZNHcYRdNW930erUcn1m4yfdhbQo+q/l/RP9N1q+o13ERFVaYiIgIiICIiAiIgIiICIiAiIgyna94iu4dIcAOiJJ7ANOSr8/aejYMuqovB2VTelC2GORlRGOq4aHexwyR5jPkuvs5sfDe4RIypcCOD2aW5a7u5+RV2a0tjra0set82PPelIiZmdrLX7f0tMD6NqlP6owPN2FUq+/1m1Tt1RMIYebI+79d/d5BT42Zttq43KfUR2PkA/YbgrgrtuILczd7Owjh8Yt0tHt083eOEpFY/BXf6mW2SY/jXiseI91RqbK+mqm0srm6y5jcjOAXgfZlSkNXXbGP0yj4Mn1XcY3e1ruw/7IUJUV01TPvpXOMxIcHAcc/F0jywrhadvmyt3e0EQeDwL2tBz85h+7yU1+eo7b8qeH7XKdWms77T+6Ut3SHTzjFc18Tvdqb5jj9SmY9qaOX1aqPxOPtVe/ElqvPGhlaxx7GP0/sO5eS6Vz2Ggt8TpZqtwY0Z9Vpz3AcRklVppimfmGjGXqqxv02jzv/iOr6llZeWvpXB7TNHhzeIONGfsWsrI+j22GurGvI6kPXJ/W5NH3+C1xedTqJisfEOvp25ra8/MiIirNEREQEREBERAREQEREBERAREQdS5ULLlE6KqGWvGD9xHtHNY9tDYpbDJpnyWO9R45OH3O9i2xdatoo69hjrGBzHcwf98D7VNhzTjn8lPqukjPHiWVbMbLx3wZFU1rh60YZ1h5niPaFerTsZS27BLN44fGk4+TeSqt82Jmtjt7Y3Oe1vEAHD2+75XhxXJZekCSm6l6YXgcC9ow4fOb2/UrGTnkjdLbjwo4PtYLcc1NT594de+8L43H/Vh+xiu132VprsSaiPS8/HZ1T49h8Qs9ul0iqbq2ohf8FvInasHgGhueHPhgqcvfSJzbZWf1jx+6z+PkvL0yTx4+HuLLhj7n3O8TM/mjto9jI7QzW+rAb2NezrE45N0nj5Ku2i2S3eQRUQJJ4nuaPlOU/a9l6vaN++urnNafjv8AWI7mt7B5BaNaLTFZ49FCzSO09rj3uPaV1bNwjW9y5x9H963KK8a/5lxbP2ZlkhEcHE83O7XO7Sf4KVRFRmZmdy2a1isRWPYREXjoREQEREBERAREQEREBERARQ+0m01LsxG2S+Tbpj3aGnS92Tgnk0E8hzX42Z2qpNqGvdYphKIyA7qvbjIyODgO48fYUE2i/ErxECX8gMn3KrWTpFtt9nZT2qq1yyZ0t3cozhpceLmgcgSgtiiLxs7T3gfy2Mavlt4OHiOfiuhtDt7b9m5tzeajdyaQ/Tu5XcDnBy1pHYVNWq5RXiFk9ufrikGprgCMj3HiO0YK9iZidw5tSto1aNqRL0bHefBVGI/a3Lh7O4+9WWzbJ01owYWanj478E+HYPBTyp0HSdaqiZsMNYDI54jA3c2C4u0gatGOfbnCktmvaNTKDH0mGk7rVcUUHtLtZSbLhhvs26EhIb1HuyRjPqg45jmoL8rtn/Tf7mf/ACKJZXlFTKHpRtVfKyKkq9Ukr2sY3dTDLnHAGSzHMjiv3c+k212qZ8NfV6ZInaXt3UxwR2ZDCD4ILgiow6XLOf8A3v8AdT/5FabNeae9x720zMlZyywg4PcRzB9hQSCIiAiIgIiICIiAiIgIij79dGWWmmqKn1YWF59uBwb7ycDxQYF06Xh1+ukdHRdYQYjA75ZCM/8Ag3wK4Oh65P2UvTqS4cBK51M8dgka46T/AGgW/SXD0P0Ltpb36TcDndF1S8nteT1f23avorl6c7b+J7sKmiOBUNbKHNPKRnVOPJjvFB6NuH5mT5jv3SvLvQn/AD7S/wBZ/gSL0VYb23aK2MqYsfCwkuHc8NIc3wcCF516E/58pf6z/AkQdjp1n3t6mA/o2Rt/uw7/AMlfPwdNot/DNQznrRHexj9Rxw8D3OwfprOOkD/mO0FQ0jOqpEfkWs+5d2QO6M9oeGRCyTPvp5Ptw0+bUG3dLG0X/DlrmfE7Eso3MXzng5cPaG6j4BeW7NP6LUQv+RIx3k8Fab08Xw3y4Q0Vv64hAADfjSy44Dv6uge8lU7pF2eGzFb6PH8SGIk97t0NTvF4cg1D8JX8zRfPk/dYojox6LKPaugFRcZZ2vL3NxG5gGGkY5sP2ru/hAT+lUVtf8sOd5xxlU7Y+6X2lpQ3ZVs5p9RI3cDHjV8brFh+1BrNp6FqC1zxT081SXwyNkaHPjwXNcHDOI+WQsZ29gFVfamN5wH1WkkdxcAtV6MLnfKqu07WNnFPunH4SFrBqy3HWDBx58Fk/SFOaW+VT2DJZUlwB7w4H7kGqVHQHSlrvRqucPx1S4RkZ7MgAZHis76KbpLs3eY4dXCWT0eVoPB3WLQfB2CD7+9TVT0718rC2CCnYSODgHkj2gF+M+9fnoY2LqLtWx19wY5sETt4HuGN7J2ac8wCcl3LhhB6NREQEREBERAREQEREBZB+ETtB6JSxUcJ61Q7W8f/ABsPAH3vwfoFa+sr21oLde7hK2426uqp6djA90B6rWuaXNAG9aflcAEGYbLdEtdtLSsqaN8DI5M6RI54JAdpzgMPDIK5NouiCvsFLJU1UkD2RDU5sbpC7GcEgFgHDnz5L0PsnPT1FFAbD/6YMDYxx4BvV0nPHIIIOe0FSVXTNrI3R1I1MkaWOB7WuGCPIoMR6AtoNdPV0M59Vpmjz3EaXjz0H6RVJ6E/58pf6z/AkW00+wVBspPDNaKOd75H7olkj3BjXtc1z5A53qAfcu/YejS3WCoZUWyFzZY86SZHn1mlp4E45EoMCoR+M9o2k/0lx1eHpGfsWmfhE7Oek08VdAOtCd3J/wDm49Un3P4fTVwtvRjbrZUtqaSFwlY/WHGR563fgnHarRc6CO6QvhuDA+KQaXNOeI8PtQedOgiwG9XL0ipGplI3WSeOZDwjHhhzvohcv4Q9Purqxw+PTtPiHyN+4LedndmqXZpjmWOERNedTsFxycY5uJPh71C9IGy9uubDV7UscW08Zy4PeMNyTjDTxOT9aDKelio9Kstmce2HB94iiB+sLudFvSdRbLW9tPcxMZBI93UYCMOIxx1BW6ntVt2lbTW+50FXA2Fjn0zZ9TNTOGrDmvPEZblrsEZC7v5GrR+jv/70v8UHHa+mO3XOeOCmE+uZ7Y25jbjU52kZ6/LJWL7ZcdoZ8/pg/fatg2K2CtNfHBXWymkYQ/WzXK8kOjlLckasHizKm6/oyt1fUuqqmFxmc/eF28eBqznOM47EEF037HC8UPpFBGN9SZf1R60Xxxw7vW8Hd6ivwfdrPS4X0Fa7rw9eHJ5xk9Zn0Sc+53sWxOaHDDuR5hZ7JsXbNj6mmqaOnkbLJUthYWSvw10mrm0nGjGRhBoiIiAiIgIiICIiAiIgLKbjOyK73MTXUW/UynA4wAv+BdxG8Ger+oR63uWrLgkpWSnMrGk95aCgyWwXFtBHZpavTBSwy1MJm6zI3gxuEcztR4bwguy48ySvlZcYb4Lw+OsEUEk9M1srhJuziNo0v08RE8tILgQMHOVrs0DZ2ls7Q5p5tIBHkV89HZgjQ3BGCMDBGMYPsxwQZHRVkb4KFlvY2Nsd5ZGdzM+WFx3L3EwPd/R8fV5A5XyawxVlJeaupMhnp6mpMDt48bkx9cGMA9Ul3M9vJa7HTMjDWxsaGt9UAAAe4di/W6bgjSMO5jHPPPKDHNopXXOuA2jmpWRejRPgFYZWxOJZmV7Cx7W7wP4ceONOF9uUDJqChFzuFPMxrpnRsqHVEcM8Y4BpmPHXHyYXZznt5rX56VlS0NqGNc0cg5oI8ivs1MydumdjXNHY5oI4cuBQYxtFXU1VFSVVQW6WUTXNo6meaOQDWcS0049eY6cd5AbyytO2nngfbpXXmKR1O6Mbxga4vDXYycDjluck9mCexTMtMyYtMrGuLDlpIB0nvHcuZBl1tvktJOKXZm4C5RSU0r26tD307mMzGXyt9YOcQ3D+tnC/ewTLTIKWV0wdcnfnN5M/fmbSd418erOAQ4aSNPALR6elZTZ9HY1mo5OloGT3nCNpGNeZGsaHngXaRkj53NBitvssVDYo7jT6xVsqAWS639Rvp273bRnGgtLst7SSSpm4eg1FXXnb+bRNFJ/Jg6RzNNPoBY+mAI1PLtedOTkYWqblunTpGnuwMc88vfxX5lpmTkGZjXFpy0kAkHvGeSDJoJfTnUDekp5ZA6i1NEziyN9RvDnfHI+EEW7IDu0u7Uo5NUNOKRz30bbzG2kc8uJMWk5DXO4ujD9YaT2LWqinbUt01DWuaexwBHkV93YwBgYHIY5Y5YQciIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIg//Z" alt="AIMER Business School official logo" />
-      <div class="top-note">Exclusive webinar for Mabrook participants</div>
+      <div class="top-note">Exclusive webinar for GCC students and parents</div>
     </div>
   </header>
 
@@ -226,8 +242,8 @@
     <div class="container content-grid">
       <section>
         <div class="section-label">Think beyond the usual career path</div>
-        <h2>An exclusive opportunity for Mabrook participants.</h2>
-        <p class="intro">This exclusive online session is specially organised for students who participated in the Mabrook programme. Explore entrepreneurship as a career, discover the mindset behind building a business, and get inspired to think about the opportunities ahead.</p>
+        <h2>An exclusive opportunity for GCC students and parents.</h2>
+        <p class="intro">This exclusive online session is designed for students and parents across the GCC who want to explore entrepreneurship as a future career path. Explore entrepreneurship as a career, discover the mindset behind building a business, and get inspired to think about the opportunities ahead.</p>
 
         <div class="info-card">
           <div class="info-row">
@@ -244,7 +260,7 @@
           </div>
           <div class="info-row">
             <div class="info-icon">🎓</div>
-            <div><strong>Who should attend?</strong><small>Mabrook participants · Grades 9–12</small></div>
+            <div><strong>Who should attend?</strong><small>GCC students · Grades 9–12 and their parents</small></div>
           </div>
         </div>
 
@@ -263,12 +279,13 @@
 
       <aside class="register-card" id="register">
         <div class="register-heading">
-          <div class="section-label">Exclusive Mabrook participants' session</div>
+          <div class="section-label">Exclusive GCC students & parents session</div>
           <h2>Your next opportunity starts here.</h2>
-          <p>Reserve your place in this special webinar created exclusively for Mabrook participants.</p>
+          <p>Reserve your place in this special webinar created for students and parents across the GCC.</p>
         </div>
         <button class="register-button" type="button" id="openRegistration">Register Now <span aria-hidden="true">→</span></button>
-        <p class="form-note">Registration is exclusively for Mabrook programme participants. Click the button to complete your registration.</p>
+        <a class="register-secondary" href="https://wa.me/919567730600?text=Hello%20AIMER%20Team%2C%20I%20need%20help%20with%20the%20GCC%20webinar%20registration." target="_blank" rel="noopener"> <span aria-hidden="true">☏</span> Need Help? Chat on WhatsApp</a>
+        <p class="form-note">This webinar is exclusively for GCC students and parents. Click the button to complete your registration.</p>
       </aside>
     </div>
   </main>
@@ -281,7 +298,7 @@
   <div class="modal-backdrop" id="registrationModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
     <div class="registration-modal">
       <div class="modal-header">
-        <strong id="modalTitle">Mabrook Participants – Webinar Registration</strong>
+        <strong id="modalTitle">GCC Students & Parents – Webinar Registration</strong>
         <button class="modal-close" type="button" id="closeRegistration" aria-label="Close registration form">&times;</button>
       </div>
       <iframe
@@ -322,5 +339,10 @@
       });
     })();
   </script>
-</body>
+
+  <a class="whatsapp-float" href="https://wa.me/919567730600?text=Hello%20AIMER%20Team%2C%20I%20have%20a%20question%20about%20the%20Entrepreneurship%20as%20a%20Career%20webinar." target="_blank" rel="noopener" aria-label="Chat with AIMER on WhatsApp">
+    <svg class="whatsapp-icon" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M20.52 3.48A11.8 11.8 0 0 0 12.13 0C5.58 0 .25 5.33.25 11.88c0 2.09.55 4.13 1.59 5.93L.15 24l6.35-1.66a11.9 11.9 0 0 0 5.63 1.43h.01c6.55 0 11.88-5.33 11.88-11.88 0-3.17-1.24-6.15-3.5-8.41ZM12.14 21.75a9.86 9.86 0 0 1-5.03-1.38l-.36-.21-3.77.99 1.01-3.67-.23-.38a9.82 9.82 0 0 1-1.51-5.22c0-5.44 4.43-9.87 9.88-9.87a9.8 9.8 0 0 1 6.99 2.9 9.8 9.8 0 0 1 2.89 6.99c0 5.45-4.43 9.87-9.87 9.87Zm5.42-7.39c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.47-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.21 5.09 4.5.71.31 1.27.5 1.7.64.71.23 1.36.2 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35Z"/></svg>
+    WhatsApp Us
+  </a>
+\n</body>
 </html>
